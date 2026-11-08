@@ -28,18 +28,6 @@ The integrated driver in [`main_runtime.py`](main_runtime.py) runs the `F1` sear
 
 ## Method
 
-```mermaid
-flowchart TD
-    A[Native initialization and program archive] --> B[Select current parent]
-    B --> C[Build edit menu and retrieve compatible cases]
-    C --> D[Generate a local edit or a full program]
-    D --> E[Parse and assemble the candidate]
-    E --> F[Evaluate the complete program]
-    F --> G[Record paired effects and update the archive]
-    G --> H[Update edit memory]
-    H --> B
-```
-
 ### 1. Decompose the program
 
 [`fuse_ane/regions.py`](fuse_ane/regions.py) builds the editable region catalog. The search uses three scopes:
