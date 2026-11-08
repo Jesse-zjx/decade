@@ -1,10 +1,6 @@
 # DECADE: Credit-Guided Efficient Automatic Heuristic Design via Program Decomposition and Edit Attribution
 
-**Anonymous source release for review**
-
 DECADE studies automatic heuristic design through program decomposition and edit attribution. It represents a heuristic as editable program regions, records the measured effects of valid local edits, and uses compatible edit evidence to inform subsequent proposals. The included implementation targets constructive heuristics for the Traveling Salesman Problem (TSP) and the Capacitated Vehicle Routing Problem (CVRP).
-
-This repository contains the method implementation, prompt templates, evaluation code, and a configuration-driven launcher. Start with the offline examples below, then configure the [experiment launcher](#experiment-execution) for your environment.
 
 ## Contents
 
@@ -13,10 +9,8 @@ This repository contains the method implementation, prompt templates, evaluation
 - [Repository structure](#repository-structure)
 - [Getting started](#getting-started)
 - [Task interfaces](#task-interfaces)
-- [Data](#data)
 - [Experiment execution](#experiment-execution)
 - [Outputs](#outputs)
-- [Third-party code](#third-party-code)
 
 ## Overview
 
@@ -193,10 +187,6 @@ def select_next_node(current_node, depot, unvisited_nodes, rest_capacity, demand
 
 The supplied task descriptions use Euclidean TSP with 50 nodes and CVRP with 50 customers, demands from 1 to 9, and vehicle capacity 40. [`fuse_ane/data.py`](fuse_ane/data.py) contains deterministic synthetic instance generation helpers.
 
-## Data
-
-**Coming soon.**
-
 ## Experiment execution
 
 [`run_study.py`](run_study.py) launches the `F1` path through `main_runtime.search(spec, cpu)`. Use a fresh checkout for each study; the launcher refuses to overwrite an existing study.
@@ -273,7 +263,3 @@ The integrated driver writes records under `runs/<run-id>/`:
 | `batches/` | Frozen proposal contexts, repair records, and edit-memory updates. |
 | `states/` and `checkpoints/` | Saved archive states and evaluation frontiers. |
 | `END.json` | Termination status and final budget/cost summary. |
-
-## Third-party code
-
-The included HiFo code retains its [upstream MIT license](vendor/upstream_hifo/LICENSE). That license applies to the vendored component; this snapshot does not specify a repository-wide license for the remaining code.
