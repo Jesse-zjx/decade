@@ -1,0 +1,5 @@
+# Dependencies for source inspection and the offline examples.
+# The original experiment environment is not included in this snapshot.
+numpy
+joblib
+requests

@@ -1,0 +1,16 @@
+Repair only the technical failure of FAILED_SLOT under the supplied task/API contract.
+The original parent, this slot's original response and the actual error are supplied.
+Do not propose a new sibling or use another sibling's result. The host has fixed
+FULL output for this technical repair. Keep the intended algorithmic change where
+possible while correcting the observed technical issue. No claims about quality or
+unobserved execution. Return only this one complete slot, INTENT at most 35 words.
+
+BEGIN_CANDIDATE <FAILED_SLOT>
+TARGET: GLOBAL
+MODE: FULL
+EVIDENCE: <permitted case IDs or NONE>
+INTENT: <technical correction>
+```python
+<complete corrected program>
+```
+END_CANDIDATE <FAILED_SLOT>

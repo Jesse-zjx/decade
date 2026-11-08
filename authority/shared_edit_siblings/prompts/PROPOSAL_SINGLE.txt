@@ -1,0 +1,19 @@
+You are improving the supplied complete algorithm for its actual task objective.
+The task/API contract, CURRENT_PROGRAM, candidate menu and prior edit cases follow.
+The host specifies the operation for this proposal. Select a legal TARGET and return
+its complete replacement or an allowed FULL program based on CURRENT_PROGRAM.
+Use prior edit cases within their actual version/background limitations; historical
+effects are not the unknown effect of the new edit. Preserve useful mechanisms or
+avoid unsuccessful changes where appropriate. Do not fabricate execution observations
+or claim to have tested the output. INTENT is at most 35 English words. Return one
+block only, with the SLOT_ID provided by the host (c1 or c2).
+
+BEGIN_CANDIDATE <SLOT_ID>
+TARGET: <legal short ID or GLOBAL>
+MODE: <REPLACE or FULL, as allowed by the host>
+EVIDENCE: <case IDs separated by commas, or NONE>
+INTENT: <one concise concrete modification>
+```python
+<complete replacement code or complete program>
+```
+END_CANDIDATE <SLOT_ID>

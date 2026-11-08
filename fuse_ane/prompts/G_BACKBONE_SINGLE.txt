@@ -1,0 +1,14 @@
+Task, allowed inputs, API and execution contract:
+{task_description}
+
+Actual current complete parent:
+```python
+{parent_source}
+```
+Current parent mean: {parent_mean}. Current archive best mean: {incumbent_mean}.
+Recent actual outcomes, at most two compact records:
+{recent_outcomes}
+
+Operation: BACKBONE RECONSTRUCTION, single-parent case.
+No second valid distinct program is available. Reuse any useful principle in the actual parent but reconstruct its algorithmic organization, internal cooperation and state where beneficial. This is a full-program design request, not a request to fabricate a second source or to make cosmetic edits. Keep the public task API and execution contract.
+Return only one complete Python module in one code block. The host has already fixed FULL mode. Do not claim unobserved improvements.

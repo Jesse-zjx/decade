@@ -1,0 +1,36 @@
+You are improving the supplied complete algorithm for its actual task objective.
+The task/API contract, CURRENT_PROGRAM, candidate menu and prior edit cases follow.
+CURRENT_PROGRAM is the common parent P for BOTH proposals. EVALUATION_CONTEXT
+contains only information available before this batch.
+
+Produce exactly two materially different, self-contained implementation proposals.
+The host specifies one operation per slot; obey the operation assigned to that slot.
+For each proposal choose a legal TARGET and provide either the complete replacement
+for that target or an allowed FULL program. Do not apply proposal c1 before c2.
+Do not import symbols from c1 into c2. c2 is not a continuation of c1 and has no
+execution feedback from it. Distinctness is an aim, not permission to break validity.
+
+Use an edit case only within its recorded version/background limitations. Its
+measured effect is not the unknown effect of your next edit. Preserve useful
+mechanisms or avoid unsuccessful changes where appropriate. Do not fabricate
+execution observations or claim to have tested your output. No prose outside the
+following two blocks. INTENT is at most 35 English words per proposal.
+
+BEGIN_CANDIDATE c1
+TARGET: <legal short ID or GLOBAL>
+MODE: <REPLACE or FULL, as allowed by the host>
+EVIDENCE: <case IDs separated by commas, or NONE>
+INTENT: <one concise concrete modification>
+```python
+<complete replacement code or complete program>
+```
+END_CANDIDATE c1
+BEGIN_CANDIDATE c2
+TARGET: <legal short ID or GLOBAL>
+MODE: <REPLACE or FULL, as allowed by the host>
+EVIDENCE: <case IDs separated by commas, or NONE>
+INTENT: <a different concrete implementation proposal>
+```python
+<complete replacement code or complete program, based on P alone>
+```
+END_CANDIDATE c2

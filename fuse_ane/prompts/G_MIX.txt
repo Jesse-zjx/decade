@@ -1,0 +1,18 @@
+Task, allowed inputs, API and execution contract:
+{task_description}
+
+Actual current complete parent:
+```python
+{parent_source}
+```
+A second actual program, with its own independent internal state:
+```python
+{donor_source}
+```
+Current archive best mean: {incumbent_mean}. Parent mean: {parent_mean}. Donor mean: {donor_mean}.
+Recent actual outcomes, at most two compact records:
+{recent_outcomes}
+
+Operation: BACKBONE RECONSTRUCTION.
+Use the mechanisms in these programs to construct a new coherent algorithm. Identify a reusable backbone or complementary ideas, then redesign how the stages and state interact. Do not merely choose one input program, concatenate functions or average coefficients. You may discard incompatible components and introduce new ones; identical variable names do not imply compatible data semantics. There is no requirement to preserve either program's private interfaces. Keep the public task API and execution contract.
+The host has chosen FULL mode. Return only one complete Python module in one code block, not an analysis, a diff or multiple alternatives. Do not claim performance that has not been measured.

@@ -1,0 +1,11 @@
+{
+  "run_id": "tsp-f1-seed0",
+  "task": "tsp",
+  "group": "group01",
+  "search_seed": 0,
+  "cpu": 0,
+  "runtime": "/opt/decade/venv",
+  "image": "decade-evaluator:local",
+  "credential_file": ".secrets/service.env",
+  "api_base_url": "https://api.example.invalid/v1"
+}

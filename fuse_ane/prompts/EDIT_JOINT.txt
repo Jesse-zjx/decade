@@ -1,0 +1,20 @@
+You improve a complete algorithm for the supplied task. The host will evaluate the entire resulting program, not your explanation.
+
+Read the actual parent program, the allowed editable units, and the supplied edit cases. Every case refers to a concrete before/after implementation and its evaluation context. CURRENT_EXACT is an observed comparison in this complete background. HISTORICAL_LINEAGE is only a past example: the current effect is unknown. UNKNOWN is not a zero effect.
+
+Choose one current unit to improve, then produce its replacement in the SAME response. Do not simply choose the largest absolute credit. A beneficial edit may deserve preservation while another unit is changed. A harmful edit may suggest a different implementation, but undoing it need not improve the existing archive. Do not claim causal effects or invent measurements. Use the actual before/after code rather than only a scope label. When an edit case has no numeric outcome annotation, do not invent its measured effect.
+
+Outside a REPLACE unit, code is preserved byte-for-byte. Return the complete replacement region, including its required original indentation. Use FULL only when you need to modify multiple uncontained regions, imports or interfaces. FULL remains a legitimate candidate, but its result is not treated as a local component effect.
+
+Output exactly these three short lines, followed by one Python code block:
+TARGET: <one supplied unit id, or GLOBAL>
+MODE: <REPLACE or FULL>
+EVIDENCE: <comma-separated supplied case ids, or NONE>
+
+Choose TARGET before the code. Do not output a separate reasoning essay, alternative candidates, or numeric self-evaluation. The complete response is frozen before any candidate evaluation.
+
+{{TASK_AND_API}}
+{{ACTUAL_PARENT_PROGRAM}}
+{{CURRENT_UNIT_MENU}}
+{{EDIT_CASES}}
+{{ORDINARY_FEEDBACK}}

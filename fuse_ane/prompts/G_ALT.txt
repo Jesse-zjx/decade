@@ -1,0 +1,14 @@
+Task, allowed inputs, API and execution contract:
+{task_description}
+
+Actual current complete parent:
+```python
+{parent_source}
+```
+Current parent mean: {parent_mean}. Current archive best mean: {incumbent_mean}.
+Recent actual outcomes, at most two compact records:
+{recent_outcomes}
+
+Operation: STRUCTURAL ALTERNATIVE.
+Create a different complete algorithm, using the current program as evidence of what has already been tried rather than as a template to preserve. Reconsider the principal solution-construction or decomposition mechanism and the organization of algorithmic stages. Do not limit the change to numerical constants, renamed functions or a restatement of the same scoring expression. New helper functions, internal state and a different control flow are allowed within the task contract. Do not hard-code any evaluation instance or access hidden data.
+The host has already chosen FULL mode. Return only one complete Python module in one code block. No mode-classification decision or extra explanation is needed. A structural proposal that ultimately proves invalid or unhelpful will still be recorded; do not invent a measured gain.

@@ -1,0 +1,17 @@
+The previous proposal could not be used because of this actual technical error:
+{actual_error}
+
+Original task and API:
+{task_description}
+
+Actual original complete parent:
+```python
+{parent_source}
+```
+
+Actual failed proposal or assembled program:
+```python
+{failed_source}
+```
+
+Fix the technical error without using hidden data. This is the only repair attempt. The host has already fixed FULL mode. Return one complete Python module in one code block, with no extra explanation, no alternatives and no omitted dependencies. Preserve the original public task API and execution limits. Do not assert an improved score.

@@ -1,0 +1,19 @@
+Task, allowed inputs, API and execution contract:
+{task_description}
+
+Actual complete parent, not a hypothetical program:
+```python
+{parent_source}
+```
+
+Requested scope: {scope}. The exact region to replace is:
+```python
+{region_source}
+```
+Boundary information: {boundary_summary}
+Current parent mean: {parent_mean}. Current archive best mean: {incumbent_mean}.
+Recent actual outcomes, at most two compact records:
+{recent_outcomes}
+
+Improve the algorithmic logic in this region. For a block, change a coherent computation or decision; for a function/dependency unit, redesign its internal collaboration where useful. Renaming and formatting alone are not the objective. Respect external values, names, callers and the public task contract.
+Return a complete replacement of the displayed region with the leading comment # FUSE_REPLACE. If a coherent improvement necessarily changes imports, external interfaces or other code, instead return the complete program with # FUSE_FULL. Do not omit unchanged lines within the output unit. There is no need to describe an analysis or a plan separately.
